@@ -114,6 +114,7 @@ public class MainActivity extends Activity implements OnScrollListener{
 			
 			if(adapter.getCount() == TOTAL_ITEMS){
 				header.setText("All "+adapter.getCount()+" Items are loaded.");
+				mListView.setOnScrollListener(null);
 				mListView.removeFooterView(footer);
 			}
 			else{
